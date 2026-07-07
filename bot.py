@@ -75,10 +75,10 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f" **Welcome to Smart Bot**\n"
         f"\n\n"
         f" **Features:**\n"
-        f"•  AI Powered Chat\n"
-        f"•  User Profile View\n"
-        f"•  Date & Time\n"
-        f"•  Interactive Buttons\n\n"
+        f"â€¢  AI Powered Chat\n"
+        f"â€¢  User Profile View\n"
+        f"â€¢  Date & Time\n"
+        f"â€¢  Interactive Buttons\n\n"
         f" **Neeche se option select karein:**"
     )
     
@@ -108,12 +108,12 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif query.data == "about":
         about_text = (
             " **About This Bot**\n\n"
-            "•  **Name:** Smart Bot\n"
-            "•  **Language:** Python\n"
-            "•  **Library:** python-telegram-bot\n"
-            "•  **AI:** Google Gemini\n"
-            "•  **Host:** Render.com\n"
-            "•  **Made with **\n\n"
+            "â€¢  **Name:** Smart Bot\n"
+            "â€¢  **Language:** Python\n"
+            "â€¢  **Library:** python-telegram-bot\n"
+            "â€¢  **AI:** Google Gemini\n"
+            "â€¢  **Host:** Render.com\n"
+            "â€¢  **Made with **\n\n"
             f" Server Time: {datetime.now().strftime('%I:%M %p')}"
         )
         await query.edit_message_text(
@@ -124,10 +124,10 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif query.data == "profile":
         profile_text = (
             f" **User Profile**\n\n"
-            f"• **Name:** {user.first_name}\n"
-            f"• **ID:** `{user.id}`\n"
-            f"• **Username:** @{user.username if user.username else 'Not Set'}\n"
-            f"• **Bot:** Active "
+            f"â€¢ **Name:** {user.first_name}\n"
+            f"â€¢ **ID:** `{user.id}`\n"
+            f"â€¢ **Username:** @{user.username if user.username else 'Not Set'}\n"
+            f"â€¢ **Bot:** Active "
         )
         await query.edit_message_text(
             profile_text,
@@ -146,10 +146,10 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif query.data == "help":
         help_text = (
             " **Help & Commands**\n\n"
-            "• /start - Show Main Menu\n"
-            "• /help - This Message\n"
-            "• /about - About Bot\n"
-            "• /time - Current Time\n\n"
+            "â€¢ /start - Show Main Menu\n"
+            "â€¢ /help - This Message\n"
+            "â€¢ /about - About Bot\n"
+            "â€¢ /time - Current Time\n\n"
             " **Buttons use karein** for more options!"
         )
         await query.edit_message_text(
