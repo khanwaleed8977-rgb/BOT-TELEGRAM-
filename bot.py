@@ -9,7 +9,7 @@ from openai import OpenAI
 # Load environment variables
 load_dotenv()
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+BOT_TOKEN = os.getenv("8965822236:AAFZMaabmqiGFKiKSNtZVKpX3RrMX4XM-Uk")
 OPENAI_API_KEY = os.getenv("sk-abcdef1234567890abcdef1234567890abcdef12")
 
 if not BOT_TOKEN or not OPENAI_API_KEY:
